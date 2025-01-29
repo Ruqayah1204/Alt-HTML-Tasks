@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Media Showcase</title>
+    <link rel="stylesheet" href="./media.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+  </head>
+  <body>
+    <header aria-label="Header Navigation">
+      <nav>
+        <ul class="nav-list">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/assignment-2/table.html">Table Data</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="header">
+        <h1>Hello, I'm Salaudeen Rukayat</h1>
+        <p>
+          A passionate Frontend Developer and a lover of creativity through
+          technology.
+        </p>
+      </div>
+
+      <div class="media-section picture">
+        <h2>See My portrait across Devices</h2>
+        <picture>
+          <source
+            srcset="
+              https://www.befunky.com/images/prismic/1f427434-7ca0-46b2-b5d1-7d31843859b6_funky-focus-red-flower-field-after.jpeg?auto=avif,webp&format=jpg&width=863
+            "
+            media="(max-width: 600px)"
+          />
+          <source
+            srcset="
+              https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2JhgoiNje6QLEdrDPqTs41z__76zTIDN3og&s
+            "
+            media="(max-width: 1024px)"
+          />
+          <source
+            srcset="
+              https://gratisography.com/wp-content/uploads/2024/10/gratisography-cool-cat-800x525.jpg
+            "
+            media="(min-width: 1025px)"
+          />
+          <img src="/assets/MY PICS.jpg" alt="Responsive portrait of me" />
+        </picture>
+      </div>
+
+      <div class="media-section audio">
+        <h2>Hear the music I listened to</h2>
+        <audio controls>
+          <source src="/assets/''When I'm Gone'' .mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <p>This audio contains a special message from me.</p>
+      </div>
+
+      <div class="media-section video">
+        <h2>I love watching wildlife. Check this</h2>
+        <video
+          controls
+          poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFU7U2h0umyF0P6E_yhTX45sGgPEQAbGaJ4g&s"
+        >
+          <source
+            src="/assets/giant-panda-eating-bamboo-free-video.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video element.
+        </video>
+      </div>
+    </main>
+
+    <div class="footer">
+      <p>Connect with me on <a href="https://www.linkedin.com">LinkedIn</a></p>
+      <span class="copyright">&copy; 2025 MyForms. All rights reserved</span>
+    </div>
+  </body>
+</html>

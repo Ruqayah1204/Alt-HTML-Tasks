@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alt School Form</title>
+    <link rel="stylesheet" href="./form.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header aria-label="Header Navigation">
+      <nav>
+        <ul class="form-nav-list">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/assignment-1/index.html">Profile</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form>
+        <h3>AltSchool Registration Form</h3>
+        <div class="form-content">
+          <div>
+            <label for="firstname">Your Name:</label>
+            <div class="name-input">
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                placeholder="First name"
+              />
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                placeholder="Last name"
+              />
+            </div>
+          </div>
+
+          <div class="input-label">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="johndoe@gmail.com"
+            />
+          </div>
+          <div class="input-label">
+            <label for="phoneNumber">Phone No:</label>
+            <input
+              type="number"
+              maxlength="11"
+              name="phoneNumber"
+              id="phoneNumber"
+              placeholder="+234..."
+            />
+          </div>
+          <div class="input-label">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob" />
+          </div>
+          <div class="input-label">
+            <label for="gender">Gender: </label>
+            <select id="gender" name="gender" class="form-select">
+              <option value="">Select gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+          <div class="input-label">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="input-label">
+            <label for="confirmPassword">Confirm Password</label>
+            <input
+              type="password"
+              name="confirmPassword"
+              id="confirmPassword"
+            />
+          </div>
+        </div>
+        <button type="submit" disabled class="form-button">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <nav arial-label="Footer Navigation" class="footer-nav">
+        <ul class="form-nav-list">
+          <li><a href="/assignment-1/index.html">My Profile</a></li>
+          <li><a href="/assignment-1/form.html">Register with Us</a></li>
+        </ul>
+        <span class="copyright">&copy; 2025 MyForms. All rights reserved</span>
+      </nav>
+    </footer>
+  </body>
+</html>

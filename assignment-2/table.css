@@ -1,0 +1,43 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: blanchedalmond;
+}
+
+.list {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.list li {
+  list-style: none;
+}
+
+main {
+  width: 100%;
+  background-color: rgba(128, 128, 0, 0.788);
+  padding: 2rem 0;
+  text-align: center;
+}
+.container {
+  width: 100%;
+  overflow-x: auto;
+}
+table {
+  margin: auto;
+  border-collapse: collapse;
+  margin-top: 20px;
+  width: auto;
+}
+td {
+  color: beige;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: left;
+}
+th {
+  background-color: #f4f4f4;
+}

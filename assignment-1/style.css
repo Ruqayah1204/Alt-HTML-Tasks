@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: auto;
+}
+:root {
+  --black: #000;
+  --white: #fff;
+  --beige: #eae7dd;
+  --brown: #7d5f46;
+  --grey: #323232;
+  --gray: #4c4b42;
+  --font: "Inter", serif;
+}
+
+.innerContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+/* NAVIGATION */
+nav {
+  padding: 1rem;
+  background-color: var(--beige);
+  margin-top: 1rem;
+  border-bottom: 1px solid var(--brown);
+}
+
+.nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.nav-items > li {
+  display: flex;
+}
+.nav-items li > a {
+  text-decoration: none;
+  color: var(--gray);
+  text-transform: uppercase;
+  font-family: var(--font);
+}
+/* PROFILE OVERVIEW */
+.profile-overview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+  background-color: var(--beige);
+  width: 100%;
+  padding: 1rem;
+}
+.image-container {
+  background: #7d5f46;
+  text-align: center;
+}
+.profile-image {
+  object-position: center;
+  object-fit: contain;
+  width: 100%;
+}
+.profile-content {
+  flex-basis: 60%;
+  padding-right: 1rem;
+  font-family: var(--font);
+}
+.profile-content > h1 {
+  font-size: 2.5rem;
+  color: var(--brown);
+}
+.profile-content > small {
+  font-size: 1.2rem;
+  color: var(--brown);
+  display: inline-block;
+  padding-bottom: 1rem;
+}
+.profile-content > p {
+  font-size: 1rem;
+  color: var(--gray);
+  text-align: justify;
+}
+/* SECTION TWO */
+.section-two {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--brown);
+  font-family: var(--font);
+}
+.section-two > h2 {
+  font-size: 2.5rem;
+  color: var(--beige);
+}
+.section-two > p {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  color: var(--beige);
+  text-align: justify;
+}
+
+.scroll {
+  background-color: var(--beige);
+  color: var(--brown);
+  font-family: var(--font);
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
+  padding: 1.5rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 800px) {
+  .profile-overview {
+    flex-direction: column;
+  }
+  .profile-content {
+    text-align: center;
+  }
+}
